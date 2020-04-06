@@ -41,7 +41,6 @@ AUTH_USER_MODEL = 'base.User'
 # STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
