@@ -1,13 +1,19 @@
 from django.shortcuts import render
 
+
+class Video:
+    def __init__(self, slug, titulo, vimeo_id):
+        self.slug = slug
+        self.titulo = titulo
+        self.vimeo_id = vimeo_id
+
+
 videos = [
-    {'slug': 'motivacao', 'titulo': 'Vídeo Aperitivo: Motivação', 'vimeo_id': 406390835},
-    {'slug': 'console-interativo', 'titulo': 'Console Interativo', 'vimeo_id': 406805399},
+    Video('motivacao', 'Vídeo Aperitivo: Motivação', 406390835),
+    Video('console-interativo', 'Console Interativo', 406805399),
 ]
 # Dict Comprehensions
-videos_dct = {
-    dct['slug']: dct for dct in videos
-}
+videos_dct = {v.slug: v for v in videos}
 
 
 def indice(request):
