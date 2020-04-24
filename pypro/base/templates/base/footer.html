@@ -1,20 +1,27 @@
+{% load static %}
 <footer class="main-footer mt-5 pt-4 text-light">
     <div class="container">
         <div class="row">
             <div class="col">
                 <h3>Entre em contato</h3>
                 <address>
-                    github.com.br/marvinsilva
-                    <br/>
                     <a href="mailto:{{ contato_email }}" class="text-light">{{ contato_email }}</a>
                 </address>
             </div>
+            <div class="col-1">
+                <a class="icon-github m-2 mt-5 pt-4" href="https://github.com/marvinsilva" target="_blank" style="align-content: center">
+                    <img src="{% static 'img/github.png' %}" alt="Icone do Github" height=auto width="50" background="white"></a>
+            </div>
+            <div class="col-2">
+                <a class="icon-linkedin m-2 mt-5 pt-4" href="https://linkedin.com/in/marcusvinicius92" target="_blank" style="align-content: center">
+                    <img src="{% static 'img/linkedin.png' %}" alt="Icone do Linkedin" height=auto width="50"></a>
+            </div>
         </div>
     </div>
-    <div class="rights pb-4">
+    <div class="rights pb-2">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col mt-2 pt-2">
                     {% now 'Y' %} Python Pro. Todos direitos reservados.
                 </div>
             </div>
