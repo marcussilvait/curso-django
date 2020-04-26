@@ -1,5 +1,5 @@
 # Curso Django - Python Pro
-
+![icone python](pypro/base/static/img/python.png) 
 Código desenvolvido no módulo de Django do Site Python Pro
 
 ### Objetivo
@@ -9,6 +9,8 @@ Construção de um web site
 Nesse módulo será construído uma aplicação web real utilizando o Web Django, o mais famoso framework web de Python. 
 Ele serve como prática, utilizando conceitos de Python e exemplificado um processo de entrega contínua com deploys 
 regulares no Heroku.
+
+___
 
 Aplicação disponível em https://pythonprocursodjango.herokuapp.com/
 
