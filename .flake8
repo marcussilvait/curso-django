@@ -1,3 +1,8 @@
 [flake8]
 max-line-length = 120
-exclude=.venv, pypro/base/migrations/
+exclude=.venv, migrations
+
+
+-   repo: https://gitlab.com/pycqa/flake8
+    hooks:
+    -   id: flake8
